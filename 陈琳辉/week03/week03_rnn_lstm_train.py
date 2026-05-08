@@ -272,7 +272,7 @@ def main():
     parser.add_argument('--maxlen', type=int, default=MAXLEN, help='最大序列长度')
     parser.add_argument('--num_layers', type=int, default=1, help='RNN/LSTM层数')
     parser.add_argument('--output_dir', type=str,
-                       default='陈琳辉/week03/output',
+                       default='output',
                        help='输出目录')
     parser.add_argument('--save_model', action='store_true', help='保存模型')
     parser.add_argument('--train_ratio', type=float, default=TRAIN_RATIO,
