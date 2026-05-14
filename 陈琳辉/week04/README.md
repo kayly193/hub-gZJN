@@ -150,10 +150,4 @@ Attention(Q, K, V) = softmax(QK^T / √d_k)V
 FFN(x) = max(0, xW₁ + b₁)W₂ + b₂
 ```
 
-## 📝 作者
 
-Week04 作业
-
-## 📄 许可证
-
-仅用于学习用途
