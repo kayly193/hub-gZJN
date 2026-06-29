@@ -174,14 +174,3 @@ ConnectionRefusedError: [Errno 111] Connection refused
 pip install transformers==4.52.4
 ```
 
----
-
-## 七、作业提交截图建议
-
-为证明作业完成，建议提交以下截图到 `outputs/screenshots/`：
-
-1. **server 启动成功**：显示 `Application startup complete`。
-2. **API 调用成功**：`curl` 返回正常 JSON 回复。
-3. **约束解码结果**：`demo_function_call.py` 运行结果，展示 guided_json 100% 通过。
-4. **吞吐对比图**：自己运行生成的 `throughput_comparison.png`。
-5. **GPU 占用**：`nvidia-smi` 显示 vLLM 进程占用显存。
