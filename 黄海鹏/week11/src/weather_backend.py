@@ -1,20 +1,3 @@
-"""
-weather_backend.py — 天气查询后端（三种方式共享的业务逻辑）
-
-教学重点：
-  1. 同样是"纯业务逻辑"，与 rag_backend 平级，被三种方式复用
-  2. 内部两次 HTTP 请求：Geocoding（城市名→经纬度）+ 天气查询
-  3. 错误处理返回可读字符串而非抛异常，方便 LLM 直接消费
-
-使用方式（作为模块）：
-  from src.weather_backend import get_weather
-  print(get_weather("宁德"))
-
-依赖：
-  pip install httpx
-  Open-Meteo API 完全免费，无需注册
-"""
-
 import httpx
 
 GEOCODING_URL = "https://geocoding-api.open-meteo.com/v1/search"
